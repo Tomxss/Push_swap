@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   chk_swap.c                                         :+:      :+:    :+:   */
+/*   chk_revrotate.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/04 13:14:38 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/11 13:25:58 by tcoetzee         ###   ########.fr       */
+/*   Created: 2019/07/11 12:33:04 by tcoetzee          #+#    #+#             */
+/*   Updated: 2019/07/11 13:32:24 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	swap(t_nums **head)
-{
-	t_nums *temp;
+#include "check_header.h"
 
-	if (*head == NULL)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	temp->next = (*head)->next;
-	(*head)->next = temp;
+void	revrotate(t_nums **head)
+{
+	t_nums *tmp;
+	t_nums *tail;
+
+	tail = *head;
+	while (tail->next->next)
+		tail = tail->next;
+	tmp = tail->next;
+	tail->next = NULL;
+	tmp->next = *head;
+	*head = tmp;
 }

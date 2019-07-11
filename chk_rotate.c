@@ -6,11 +6,11 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/11 11:21:26 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/11 12:27:57 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/11 13:31:46 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "check_header.c"
+#include "check_header.h"
 
 void	rotate(t_nums **head)
 {
@@ -25,15 +25,3 @@ void	rotate(t_nums **head)
 	tmp->next = NULL;
 	tail->next = tmp;
 }
-/*
- * 			
- *		 A[9]-[8]-[5]-[0]
- *		
- *
- *
- *
- *
- *
- *
- *
- */
