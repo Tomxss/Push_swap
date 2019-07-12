@@ -6,16 +6,14 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:26:33 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:26:59 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 13:04:11 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CHECK_HEADER_H
 # define CHECK_HEADER_H
 # include "libft/libft.h"
-# include "gnl/get_next_line.h"
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <limits.h>
 
