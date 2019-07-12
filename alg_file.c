@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:21:23 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:22:16 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 13:36:16 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		ra_or_rra_two(t_nums **a, int tot_minus_pos, int i)
 {
 	while (tot_minus_pos > 0)
 	{
-		reverse_rotate_a(a);
+		revrotate(a);
 		write(1, "rra\n", 4);
 		tot_minus_pos--;
 		i++;
@@ -60,7 +60,7 @@ int		ra_or_rra(t_nums **a, int tot, int pos)
 	{
 		while (pos > 0)
 		{
-			rotate_a(a);
+			rotate(a);
 			write(1, "ra\n", 3);
 			pos--;
 			i++;

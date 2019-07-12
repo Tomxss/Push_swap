@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:36:48 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:36:50 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 14:23:51 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		rb_or_rrb_one_hun_two(t_nums **a, t_nums **b, int pos, int tot)
 	biggest = biggest_finder(*b);
 	while (tot > pos)
 	{
-		reverse_rotate_b(b);
+		revrotate(b);
 		write(1, "rrb\n", 4);
 		pos++;
 		i++;
@@ -38,7 +38,7 @@ int		rb_or_rrb_one_hun_one(t_nums **a, t_nums **b, int pos, int i)
 {
 	while (pos > 0)
 	{
-		rotate_b(b);
+		rotate(b);
 		write(1, "rb\n", 3);
 		pos--;
 		i++;

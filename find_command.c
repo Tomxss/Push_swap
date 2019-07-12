@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:29:22 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:31:21 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 13:32:49 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ void		command_not_found(void)
 void		apply_command(char *str, t_nums **a, t_nums **b)
 {
 	if (ft_strcmp(str, "sa") == 0)
-		swap_a(a);
+		swap(a);
 	else if (ft_strcmp(str, "sb") == 0)
-		swap_b(b);
+		swap(b);
 	else if (ft_strcmp(str, "ss") == 0)
 		ss(a, b);
 	else if (ft_strcmp(str, "pa") == 0)
@@ -39,15 +39,15 @@ void		apply_command(char *str, t_nums **a, t_nums **b)
 	else if (ft_strcmp(str, "pb") == 0)
 		push_b(a, b);
 	else if (ft_strcmp(str, "ra") == 0)
-		rotate_a(a);
+		rotate(a);
 	else if (ft_strcmp(str, "rb") == 0)
-		rotate_b(b);
+		rotate(b);
 	else if (ft_strcmp(str, "rr") == 0)
 		rr(a, b);
 	else if (ft_strcmp(str, "rra") == 0)
-		reverse_rotate_a(a);
+		revrotate(a);
 	else if (ft_strcmp(str, "rrb") == 0)
-		reverse_rotate_b(b);
+		revrotate(b);
 	else if (ft_strcmp(str, "rrr") == 0)
 		rrr(a, b);
 	else

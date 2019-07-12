@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:26:33 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 13:04:11 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 14:17:11 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,14 +85,11 @@ int				sort_three(t_nums **a);
 int				min_finder(t_nums *a, int min);
 int				my_insert_sort(t_nums **a, t_nums **b, int i);
 int				ft_isdigitsss(char c);
-void			swap_a(t_nums **nums);
-void			swap_b(t_nums **nums);
+void			swap(t_nums **nums);
 void			ss(t_nums **a, t_nums **b);
-void			rotate_a(t_nums **nums);
-void			rotate_b(t_nums **nums);
+void			rotate(t_nums **nums);
 void			rr(t_nums **a, t_nums **b);
-void			reverse_rotate_a(t_nums **nums);
-void			reverse_rotate_b(t_nums **nums);
+void			revrotate(t_nums **nums);
 void			rrr(t_nums **a, t_nums **b);
 void			push_a(t_nums **a, t_nums **b);
 void			push_b(t_nums **a, t_nums **b);

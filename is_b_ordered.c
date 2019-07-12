@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:32:58 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:33:04 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 14:23:02 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int			rb_x_amount(t_nums **b, int pos)
 	tot = tot_b(*b);
 	while (pos != 0)
 	{
-		rotate_b(b);
+		rotate(b);
 		write(1, "rb\n", 3);
 		pos--;
 	}
@@ -84,7 +84,7 @@ int			rrb_x_amount(t_nums **b, int pos)
 	{
 		while (pos != 0)
 		{
-			reverse_rotate_b(b);
+			revrotate(b);
 			write(1, "rrb\n", 4);
 			pos--;
 		}

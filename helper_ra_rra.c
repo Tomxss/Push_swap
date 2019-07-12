@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 10:32:45 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/07/12 10:32:50 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/12 14:22:05 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ra_x_amount(t_nums **a, int pos)
 	tot = tot_b(*a);
 	while (pos != 0)
 	{
-		rotate_a(a);
+		rotate(a);
 		write(1, "ra\n", 3);
 		pos--;
 	}
@@ -38,7 +38,7 @@ int		rra_x_amount(t_nums **a, int pos)
 	i = pos;
 	while (pos != 0)
 	{
-		reverse_rotate_a(a);
+		revrotate(a);
 		write(1, "rra\n", 4);
 		pos--;
 	}
